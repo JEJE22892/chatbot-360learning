@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot GPT - Assistant IA</title>
+    <meta name="description" content="Assistant IA conversationnel intégrable en iframe" />
+    
+    <!-- Optimisations pour iframe -->
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      /* Prévenir les problèmes d'iframe */
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      /* Éviter les problèmes de scroll dans certains LMS */
+      #root {
+        height: 100vh;
+        max-height: 100vh;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
