@@ -6,17 +6,18 @@ Une application de chatbot GPT moderne et sécurisée, parfaitement adaptée pou
 
 ```
 chatbot-gpt360/
-├── client/              # Frontend React + TypeScript
-│   ├── src/
-│   │   ├── components/  # Composants React
-│   │   ├── hooks/       # Hooks personnalisés
-│   │   ├── types/       # Types TypeScript
-│   │   └── utils/       # Utilitaires
-├── server/              # Backend Express.js
-│   ├── routes/          # Routes API
-│   ├── middleware/      # Middlewares
-│   ├── services/        # Services (OpenAI)
-│   └── utils/           # Utilitaires serveur
+├── project/
+│   └── client/              # Frontend React + TypeScript
+│       ├── src/
+│       │   ├── components/  # Composants React
+│       │   ├── hooks/       # Hooks personnalisés
+│       │   ├── types/       # Types TypeScript
+│       │   └── utils/       # Utilitaires
+├── server/                  # Backend Express.js
+│   ├── routes/              # Routes API
+│   ├── middleware/          # Middlewares
+│   ├── services/            # Services (OpenAI)
+│   └── utils/               # Utilitaires serveur
 └── README.md
 ```
 
@@ -43,7 +44,7 @@ cd server
 npm install
 
 # Frontend
-cd ../client
+cd ../project/client
 npm install
 ```
 
@@ -72,7 +73,7 @@ cd server
 npm run dev
 
 # Terminal 2 - Frontend  
-cd client
+cd project/client
 npm run dev
 ```
 
@@ -115,7 +116,7 @@ Render utilisera automatiquement `/api/health` pour vérifier l'état du service
 Si vous souhaitez déployer le frontend séparément :
 
 ```bash
-cd client
+cd project/client
 npm run build
 # Déployez le dossier 'dist' sur Netlify/Vercel
 ```
